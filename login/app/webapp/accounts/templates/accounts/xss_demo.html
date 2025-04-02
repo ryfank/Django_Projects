@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Prevention Example</title>
+</head>
+<body>
+    <h2>XSS Prevention in Django</h2>
+
+    {% with link="http://www.google.com" %}
+    <p>Example of a safe link:</p>
+    <a href="{{ link }}">Visit Google</a>
+    {% endwith %}
+
+    
+</body>
+</html>
